@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "Palgaturu analüüs ja brognoos | Stefan Linde | Äripäev",
   description: `Veebirakendus, mis võimaldab kasutajatel analüüsida
   Eesti palgaturu andmeid ja saada ülevaade palgatasemete trendidest erinevates valdkondades.`,
+  icons: {
+    icon: "/test.ico",
+  }
 };
 
 export default function RootLayout({
@@ -22,9 +25,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="et">
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-      </head>
       <body className={`${inter.variable} font-sans antialiased bg-white`}>
         <Header />
         {children}
